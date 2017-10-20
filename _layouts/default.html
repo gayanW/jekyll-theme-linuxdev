@@ -1,1 +1,46 @@
-{{ content }}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Default Title</title>
+    <meta charset="utf-8">
+
+    {% if page.title %}
+        <title>{{ page.title }}</title>
+    {% else %}
+        <title>{{ site.name }}</title>
+    {% endif %}
+
+    <meta name="description" content="{{ site.description }}">
+
+    {% if site.google_verification %}
+        <meta name="google-site-verification" content="{{ site.google_verify }}">
+    {% endif %}
+
+    <link rel="icon" href="/assets/img/blog.png">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Roboto|Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ "assets/css/main.css" | relative_url }}">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<h1><a href="./">{{ site.name }}</a></h1>
+			<ul>
+				{% for item in site.data.navigation.main %}
+				<li>
+					<a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+
+        {{ content }}
+
+	<div class="footer">
+		<p>&copy; 2017 <a href="https://linuxdevspace.github.io/blog/">Gayan Weerakutti</a>, unless otherwise noted.</p>
+	</div>
+	</div>
+</body>
+
+</html>
