@@ -1,12 +1,12 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "linuxdevspace.theme"
+  spec.name          = "jekyll-theme-linuxdev"
   spec.version       = "0.1.0"
   spec.authors       = ["Gayan Weerakutti"]
   spec.email         = ["gayan@linuxdeveloper.space"]
 
-  spec.summary       = %q{Jekyll theme for linuxdeveloper.space}
+  spec.summary       = %q{Minimal yet Beautiful Jekyll theme}
   spec.homepage      = "https://linuxdevspace.github.io/blog/"
   spec.license       = "MIT"
 
