@@ -65,6 +65,15 @@ ul {
 		}
 	}
 }
+ol {
+	li {
+		padding: 5px;
+		padding-left: 10px;
+		@media screen and (max-width: $br) {
+			padding: 10px 0 10px 0;
+		}
+	}
+}
 blockquote {
   color: $color-black;
   border-left: 4px solid $color-black;
@@ -233,7 +242,21 @@ hr {
 			font-size: 1em;
 			list-style: circle;
 			margin-left: 30px;
-			margin-top: -10px;
+			margin-bottom: 15px;
+			li {
+				padding: 5px;
+				padding-left: 5px;
+				@media screen and (max-width: $br) {
+					padding: 10px 0 10px 0;
+				}
+			}
+			@media screen and (max-width: $br) {
+				margin-left: 10px;
+			}
+		}
+		ol {
+			font-size: 1em;
+			margin-left: 30px;
 			margin-bottom: 15px;
 			li {
 				padding: 5px;
