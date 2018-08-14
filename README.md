@@ -30,6 +30,16 @@ Or install it yourself as:
 
 TODO: Write usage instructions here. Describe your available layouts, includes, and/or sass.
 
+## Customization
+
+The following variables can be overriden in your site's `_config.yml`
+
+``` yaml
+theme: jekyll-theme-linuxdev   
+
+# order posts in chronological order
+post_order: reversed
+```
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.

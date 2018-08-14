@@ -4,10 +4,18 @@ layout: default
 <div class="blog">
 	<h1></h1>
 	<ul>
-		{% for post in site.posts %}
+		{% if site.post_order == "reversed" %}
+			{% for post in site.posts reversed %}
 		<li>
 			<span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
 		</li>
-		{% endfor %}
+			{% endfor %}
+		{% else %}
+			{% for post in site.posts %}
+		<li>
+			<span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+		</li>
+			{% endfor %}
+		{% endif %}
 	</ul>
 </div>
