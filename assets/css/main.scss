@@ -198,7 +198,6 @@ hr {
 		}
 	}
 	&__content {
-		padding-top: 30px;
 		h1 {
 			font-size: 1.4em;
 			font-weight: 700;
@@ -283,12 +282,8 @@ hr {
 			background: $color-grey;
 		}
 		.highlight {
-			margin: 10px;
-			margin-bottom: 15px;
-			padding: 10px;
 			line-height: 1.5;
 			border-radius: 3px;
-			background: $color-highlight;
 			code {
 				color: $color-white;
 				background: none;
