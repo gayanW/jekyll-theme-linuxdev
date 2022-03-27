@@ -40,6 +40,16 @@ theme: jekyll-theme-linuxdev
 # order posts in chronological order
 post_order: reversed
 ```
+
+### Syntax Highlighting Themes
+
+``bash
+$ rougify help style
+$ rougify style monokai > assets/css/syntax/monaki.css
+```
+
+Also make sure to update the name of the css file being used for syntax highlighting in `_layouts/default.html`
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
